@@ -1,0 +1,18 @@
+{
+	"name": "foundation-project-mcp",
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"setup:gmail": "tsx server/generateTokens.ts",
+		"start": "tsx server/emailServer.ts"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.24.3",
+		"dotenv": "^16.4.7",
+		"googleapis": "^167.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^24.10.1",
+		"tsx": "^4.19.2"
+	}
+}
