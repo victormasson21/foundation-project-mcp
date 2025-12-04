@@ -40,6 +40,7 @@ async function listMessages() {
     const response = await gmail.users.messages.list({
       userId: "me",
       maxResults: 10,
+      q: "is:unread",
     });
 
     console.log("Messages:", response.data.messages);
@@ -50,5 +51,76 @@ async function listMessages() {
   }
 }
 
-// Example usage
-listMessages();
+/**
+
+get_unread_emails tool {
+  return 
+    sender
+    subject
+    body/snippet
+    email/thread ID
+}
+
+analyse content and assess nees for a reply
+list emails that require one
+prompt user asking "should i draft reply for these?"
+
+create_draft_reply tool {
+  accepts the original email/thread ID and reply body
+  create a correctly threaded draft
+}
+
+*/
+
+async function getMessageDetails(messageId: string) {
+  try {
+    const response = await gmail.users.messages.get({
+      userId: "me",
+      id: messageId,
+      format: "metadata",
+      metadataHeaders: ["From", "Subject"],
+    });
+
+    console.log(response.data);
+
+    const headers = response.data.payload?.headers || [];
+    const from = headers.find((h) => h.name === "From")?.value;
+    const subject = headers.find((h) => h.name === "Subject")?.value;
+    const snippet = response.data.snippet;
+    const threadId = response.data.threadId;
+
+    return {
+      sender: from,
+      subject,
+      snippet,
+      threadId,
+      id: messageId,
+    };
+  } catch (error) {
+    console.error("Error getting message details:", error);
+    throw error;
+  }
+}
+
+async function listMessagesDetails() {
+  try {
+    const messages = await listMessages();
+
+    if (!messages || messages.length === 0) {
+      console.log("No messages found.");
+      return [];
+    }
+
+    const messagesWithDetails = await Promise.all(
+      messages.map((msg) => getMessageDetails(msg.id!))
+    );
+
+    console.dir(messagesWithDetails);
+    return messagesWithDetails;
+  } catch (error) {
+    console.error("Error listing messages with senders:", error);
+    throw error;
+  }
+}
+
+listMessagesDetails();
