@@ -4,15 +4,23 @@
 	"type": "module",
 	"scripts": {
 		"setup:gmail": "tsx server/generateTokens.ts",
-		"start": "tsx server/emailServer.ts"
+		"build": "tsc",
+		"prepublishOnly": "npm run build",
+		"start": "node dist/emailServer.js",
+		"dev": "tsx server/emailServer.ts"
+	},
+	"bin": {
+		"gmail-mcp-server": "./dist/emailServer.js"
 	},
 	"dependencies": {
 		"@modelcontextprotocol/sdk": "^1.24.3",
 		"dotenv": "^16.4.7",
-		"googleapis": "^167.0.0"
+		"googleapis": "^167.0.0",
+		"zod": "^4.1.13"
 	},
 	"devDependencies": {
 		"@types/node": "^24.10.1",
-		"tsx": "^4.19.2"
+		"tsx": "^4.19.2",
+		"typescript": "^5.9.3"
 	}
 }
