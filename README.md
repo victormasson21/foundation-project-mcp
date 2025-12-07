@@ -166,3 +166,13 @@ To enable the style guide feature:
 <img width="775" height="764" alt="Screenshot 2025-12-07 at 16 38 46" src="https://github.com/user-attachments/assets/6e09662d-fd13-46a6-a380-acade13e5af3" />
 
 </details>
+
+<details>
+<summary>Gmail and Notion screenshots</summary>
+
+<img width="963" height="307" alt="Screenshot 2025-12-07 at 16 51 41" src="https://github.com/user-attachments/assets/3e9942a3-b8c8-4042-aff1-14688524bbe5" />
+<img width="674" height="271" alt="Screenshot 2025-12-07 at 16 51 52" src="https://github.com/user-attachments/assets/8d25943f-ce1d-44d2-94de-810b17c51e80" />
+<img width="927" height="461" alt="Screenshot 2025-12-07 at 16 52 20" src="https://github.com/user-attachments/assets/07309756-e950-4166-b0d1-26a6759b5754" />
+
+
+</details>
