@@ -78,8 +78,6 @@ Creates a draft reply to an email in a thread.
 - `subject` (required): The subject of the original email
 - `replyBody` (required): The draft reply content
 
-**Example prompts:** "Create a draft reply to this email saying..." • "Draft a response to the email from [sender]"
-
 ### `get_style_guide`
 
 Retrieves the email writing style guide from Notion (if configured).
@@ -87,8 +85,6 @@ Retrieves the email writing style guide from Notion (if configured).
 **Parameters:** None
 
 **Returns:** Email writing guidelines and best practices from your Notion page
-
-**Example prompts:** "Get the email style guide" • "What are our email writing standards?" • "Show me the style guide before I draft a reply"
 
 ## Example prompts
 
@@ -100,9 +96,7 @@ Retrieves the email writing style guide from Notion (if configured).
 - "Draft a response to the email from [sender]"
 - "Draft a response to important unread emails following our style guide"
 
-## Screenshots
-
-To be added.
+**Scroll down for screenshots of some of these prompts in action.**
 
 ## Notion Setup (Optional)
 
@@ -144,3 +138,20 @@ To enable the style guide feature:
 
 - **Invalid credentials / Token errors**: Re-run `pnpm setup:gmail`
 - **No emails returned**: Check you have unread emails and Gmail API is enabled in Google Cloud Console
+
+## Demo
+
+<details>
+<summary>Example 1</summary>
+
+</details>
+
+<details>
+<summary>Example 2</summary>
+
+</details>
+
+<details>
+<summary>Example 3</summary>
+
+</details>
