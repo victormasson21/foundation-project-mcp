@@ -142,16 +142,27 @@ To enable the style guide feature:
 ## Demo
 
 <details>
-<summary>Example 1</summary>
+<summary>"Show me my unread emails"</summary>
+
+<img width="791" height="630" alt="Screenshot 2025-12-07 at 16 19 49" src="https://github.com/user-attachments/assets/f8d507f8-6582-41ab-8881-44e1cfcfa161" />
+<img width="759" height="662" alt="Screenshot 2025-12-07 at 16 23 11" src="https://github.com/user-attachments/assets/c21d9e6b-9984-44c0-8575-16aec1fbff01" />
+<img width="762" height="409" alt="Screenshot 2025-12-07 at 16 23 23" src="https://github.com/user-attachments/assets/138ede87-5358-4303-89e8-3e5325679771" />
+
 
 </details>
 
 <details>
-<summary>Example 2</summary>
+<summary>"Draft replies to my unread emails"</summary>
+  
+<img width="763" height="620" alt="Screenshot 2025-12-07 at 16 34 49" src="https://github.com/user-attachments/assets/b8803487-de21-42c8-b89a-49167d50e0fc" />
+<img width="765" height="570" alt="Screenshot 2025-12-07 at 16 35 03" src="https://github.com/user-attachments/assets/050c3bf7-a298-45f1-9978-94499c13a1e1" />
+<img width="749" height="204" alt="Screenshot 2025-12-07 at 16 35 12" src="https://github.com/user-attachments/assets/19f2b496-99d3-413d-bec1-ea3068a961e9" />
 
 </details>
 
 <details>
-<summary>Example 3</summary>
+<summary>"Did i receive any good newsletters today?"</summary>
+
+<img width="775" height="764" alt="Screenshot 2025-12-07 at 16 38 46" src="https://github.com/user-attachments/assets/6e09662d-fd13-46a6-a380-acade13e5af3" />
 
 </details>
