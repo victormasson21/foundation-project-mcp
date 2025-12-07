@@ -4,6 +4,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { server } from "./gmail/server.js";
 import { getUnreadEmailsTool } from "./tools/getUnreadEmails.js";
 import { createDraftReplyTool } from "./tools/createDraftReply.js";
+import { getStyleGuideTool } from "./tools/getStyleGuide.js";
 
 // Register tools
 server.registerTool(
@@ -16,6 +17,12 @@ server.registerTool(
   createDraftReplyTool.name,
   createDraftReplyTool.config,
   createDraftReplyTool.handler
+);
+
+server.registerTool(
+  getStyleGuideTool.name,
+  getStyleGuideTool.config,
+  getStyleGuideTool.handler
 );
 
 // Set up server lifecycle
